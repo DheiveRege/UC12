@@ -1,0 +1,46 @@
+body {
+    background: linear-gradient(to bottom, #0f172a, #1e293b, #334155);
+    color: white;
+}
+
+.titulo01 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.img01 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button {
+    border: none;
+    border-radius: 7px;
+    background-color: orange;
+    color: white;
+    font-size: 12px;
+    padding: 5px 5px;
+}
+
+.classificacao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+}
+
+.h3-descricao {
+    display: block;
+    margin-left: 310px;
+
+}
+
+.p-descricao {
+    display: block;
+    margin-left: 310px;
+
+}
