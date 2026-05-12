@@ -1,0 +1,75 @@
+p {
+    background-color: aqua;
+}
+
+div {
+
+    background-color: aquamarine;
+    height: 100px;
+    width: 200px;
+}
+
+span {
+
+    background-color: yellowgreen;
+    width: 200px;
+}
+
+.box0 {
+    border-radius: 10px;
+    display: inline-block;
+    background-color: brown;
+    width: 100px;
+    height: 100px;
+}
+
+.box1 {
+    display: block;
+    width: 150px;
+    height: 80px;
+    background-color: darkgray;
+}
+
+.box2 {
+    display: inline;
+    width: 150px;
+    height: 80px;
+    background: blue;
+}
+
+.box3 {
+    display: inline-block;
+    width: 150px;
+    height: 80px;
+    background: black;
+}
+
+a {
+    display: inline-block;
+    margin: 10px;
+    width: 200px;
+    background: gray;
+
+}
+
+.card {
+
+    background-color: rgb(6, 39, 70);
+    width: 300px;
+    height: 200px;
+    border:5px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    
+}
+
+button {
+    display: inline-block;
+    border-radius: 5px;
+    padding: auto;
+    background-color: rgb(62, 52, 199);
+}
+
+.card-p {
+    display: inline-block;
+}
