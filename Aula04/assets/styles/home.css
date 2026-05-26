@@ -2,40 +2,161 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+
 }
 
 body {
     height: 100vh;
     display: grid;
     /* coluna fixa e outra ocupa o restante*/
-    grid-template-columns: 250px 1fr;
+    grid-template-columns: 1fr 1fr;
     /* a primeir ae terceira tem tamanho fixo e a segunda ocupa o resto*/
     grid-template-rows: 100px 1fr 100px;
 
     grid-template-areas:
         "header header"
-        "slidebar main"
+        "main main"
         "footer footer"
     ;
 
+    color: white;
+    font-family: 'Inter', sans-serif;
 }
 
 header {
     grid-area: header;
-    background-color: bisque;
+
+    background-color: rgb(34, 34, 33);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
 }
 
-aside {
-    grid-area: slidebar;
-    background-color: rgb(248, 248, 248);
+
+header div {
+    margin: 10px;
+    gap: 10px;
+    display: flex;
 }
+
+header img {
+    height: 16px;
+}
+
+nav {
+    margin: 10px;
+    justify-self: end;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+
+
+
 
 main {
     grid-area: main;
-    background-color: burlywood;
+    background-color: black;
+
 }
 
-footer{
+.container-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    padding: 20px;
+    
+}
+
+.produto {
+    display: flex;
+    width: 220px;
+    height: 275px;
+
+    justify-items: center;
+    align-items: center;
+
+    flex-direction: column;
+
+    background-color: white;
+
+    border-radius: 15px;
+    padding: 5px;
+
+}
+
+main img {
+    display: flex;
+    padding: 10px 10px;
+
+    height: 150px;
+    width: 150px;
+
+}
+
+.descricao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: black;
+
+    gap: 10px;
+}
+
+.descricao p {
+    text-align: center;
+    max-width: 220px;
+}
+
+.main-btn-buy {
+    background-color: royalblue;
+    color: white;
+    border: none;
+    font-size: medium;
+
+    padding: 4px;
+    padding-inline: 40px;
+    border-radius: 5px;
+    
+    transition: all 0.4;
+}
+
+.main-btn-buy:hover{
+    background-color: rgb(45, 95, 247);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    display: flex;
     grid-area: footer;
-    background-color: rgb(248, 211, 154);
+    background-color: rgb(34, 34, 33);
+
+    justify-content: center;
+    padding-top: 50px;
 }
