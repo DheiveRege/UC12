@@ -1,0 +1,191 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    height: 100vh;
+    display: grid;
+    /* coluna fixa e outra ocupa o restante*/
+    grid-template-columns: 1fr 1fr;
+    /* a primeir ae terceira tem tamanho fixo e a segunda ocupa o resto*/
+    grid-template-rows: 100px 1fr 100px;
+
+    grid-template-areas:
+        "header header"
+        "main main"
+        "footer footer"
+    ;
+
+    color: white;
+    font-family: 'Inter', sans-serif;
+}
+
+header {
+    grid-area: header;
+
+    background-color: gray;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+
+
+header div {
+    margin: 10px;
+    gap: 10px;
+    display: flex;
+}
+
+header img {
+    height: 16px;
+}
+
+nav {
+    margin: 10px;
+    justify-self: end;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+
+
+
+
+main {
+    grid-area: main;
+    background-color: black;
+
+}
+
+.container-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    padding: 20px;
+
+}
+
+.produto {
+    display: flex;
+    width: 220px;
+    height: 275px;
+
+    justify-items: center;
+    align-items: center;
+
+    flex-direction: column;
+
+    background-color: white;
+
+    border-radius: 15px;
+    padding: 5px;
+
+}
+
+main img {
+    display: flex;
+    padding: 10px 10px;
+
+    height: 150px;
+    width: 150px;
+
+}
+
+.descricao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    color: black;
+
+    gap: 10px;
+}
+
+
+.card {
+    display: flex;
+    gap: 10px;
+}
+
+
+.card-1 {
+    background-color: blueviolet ;
+    opacity: 0.8;
+    color: black;
+    font-size: small;
+    border-radius: 8px;
+
+    padding: 4px;
+    padding-inline: 5px;
+
+}
+
+.card-2 {
+    background-color: greenyellow;
+    color: black;
+    font-size: small;
+    border-radius: 5px;
+
+    padding: 4px;
+    padding-inline: 5px;
+
+}
+
+.main-btn-buy {
+    background-color: royalblue;
+    color: white;
+    border: none;
+    font-size: medium;
+
+    padding: 4px;
+    padding-inline: 40px;
+    border-radius: 5px;
+
+    transition: all 0.4;
+}
+
+.main-btn-buy:hover {
+    background-color: rgb(45, 95, 247);
+}
+
+span{
+    background-color: aliceblue;
+    color: black;
+}
+
+#troll {
+    opacity: 0;
+}
+
+
+
+
+
+
+
+
+
+footer {
+    display: flex;
+    grid-area: footer;
+    background-color: rgb(34, 34, 33);
+
+    justify-content: center;
+    padding-top: 50px;
+}

@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #F7F9FC;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+
+}
+
+.container-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #1A202C;
+    box-shadow: 5px 5px 10px;
+
+    width: 350px;
+    height: 500px;
+
+    border-radius: 30px;
+}
+
+.btn-numbers {
+    background-color: gray;
+    color: aliceblue;
+    font-size: larger;
+    font-weight: 600;
+
+    padding: 5px;
+    border-radius: 5px;
+}
