@@ -1,4 +1,5 @@
 * {
+    font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -8,35 +9,88 @@ body {
     background-color: #F7F9FC;
 }
 
-main{
+main {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-
-
 }
 
 .container-main {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
 
     background-color: #1A202C;
-    box-shadow: 5px 5px 10px;
+    box-shadow: 2px 2px 10px;
 
     width: 350px;
     height: 500px;
-
     border-radius: 30px;
+    gap: 20px;
+}
+
+.painel {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background-color: white;
+    margin-top: 30px;
+    height: 80px;
+    width: 300px;
+    border-radius: 40px;
+
+}
+
+.container-btn {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    animation-duration: 2s;
+    animation: buttons;
+    
+    width: 300px;
+    height: 330px;
+    padding: 10px;
+    gap: 10px;
+   
+}
+
+#resultado{
+    background-color: transparent;
+    grid-column: span 2;
 }
 
 .btn-numbers {
-    background-color: gray;
-    color: aliceblue;
-    font-size: larger;
-    font-weight: 600;
+    background-color: transparent;
+}
 
-    padding: 5px;
+button{
+    background-color: transparent;
+    color: aliceblue;
+
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+
+    border-style: none;
+    padding: 10px;
+    padding-inline: 20px;
     border-radius: 5px;
+
+    transition: 0.4s;
+
+}
+
+.btn-numbers:hover {
+   background-color: rgb(252, 82, 52);
+}
+
+#resultado:hover {
+   background-color: rgb(2, 154, 138);
+   
+}
+
+button:hover{
+    background-color: rgb(6, 6, 6);
 }
