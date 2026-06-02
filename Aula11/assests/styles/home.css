@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: darkseagreen;
+
+    height: 100px;
+    padding: 20px 40px;
+}
+
+.text {
+    background-color: skyblue;
+    color: darkblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.hidden {
+    display: none;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    display: flex;
+    text-decoration: none;
+    color: rgb(6, 68, 6);
+    margin: 5px;
+    font-weight: 500;
+}
+
+button {
+    display: flex;
+}
+
+img {
+    width: 100px;
+}
+
+
+
+/*Apicça o estilo abaixo para telas de 768 viu fodido*/
+@media (max-width: 768px) {
+    .menu-desktop {
+        display: none;
+    }
+
+    .hidden {
+        display: block;
+    }
+
+    .menu-mobile {
+        display: flex;
+        flex-direction: column;
+        background-color: bisque;
+        position: relative;
+        bottom: -50px;
+    }
+}

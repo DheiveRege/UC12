@@ -1,12 +1,23 @@
 * {
-    font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
 body {
-    background-color: #F7F9FC;
+    background-color: rgb(171, 165, 165);
+}
+
+header div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 100px;
+}
+
+#trocar {
+    display: flex;
 }
 
 main {
@@ -33,39 +44,41 @@ main {
 
 .painel {
     display: flex;
-    justify-content: start;
+    justify-content: end;
     align-items: center;
-    background-color: white;
+    overflow: hidden;
+
+    background-color: rgb(109, 115, 104);
+    box-shadow: 4px 4px 10px;
+    font-family: 'Digital-7', sans-serif;
+    font-size: 1.8rem;
+
     margin-top: 30px;
     height: 80px;
     width: 300px;
-    border-radius: 40px;
+    border-radius: 30px;
 
 }
+
 
 .container-btn {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     animation-duration: 2s;
     animation: buttons;
-    
+
     width: 300px;
     height: 330px;
     padding: 10px;
     gap: 10px;
-   
-}
 
-#resultado{
-    background-color: transparent;
-    grid-column: span 2;
 }
 
 .btn-numbers {
     background-color: transparent;
 }
 
-button{
+button {
     background-color: transparent;
     color: aliceblue;
 
@@ -82,15 +95,28 @@ button{
 
 }
 
-.btn-numbers:hover {
-   background-color: rgb(252, 82, 52);
+button:hover {
+    background-color: rgb(6, 6, 6);
+}
+
+.btn-numbers2:hover {
+    background-color: rgb(171, 165, 165);
+    color: #1A202C;
 }
 
 #resultado:hover {
-   background-color: rgb(2, 154, 138);
-   
+    background-color: rgba(67, 200, 98, 0.679);
+
 }
 
-button:hover{
-    background-color: rgb(6, 6, 6);
+#apagar:hover {
+    background-color: rgba(255, 127, 80, 0.716);
+}
+
+#apagar2:hover {
+    background-color: rgba(255, 127, 80, 0.716);
+}
+
+#resultado {
+    background-color: transparent;
 }
