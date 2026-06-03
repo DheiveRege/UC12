@@ -61,8 +61,10 @@ img {
     .menu-mobile {
         display: flex;
         flex-direction: column;
-        background-color: bisque;
+        background-color: darkseagreen;
         position: relative;
-        bottom: -50px;
+        top: 100%;
+        bottom: -75px;
+        border-radius: 0px 0px 10px 10px;
     }
 }
