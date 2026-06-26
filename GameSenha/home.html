@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senha o Jogo</title>
+    <link rel="stylesheet" href="/GameSenha/assests/styles/home.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>🔐 Senha o Jogo</h1>
+    </header>
+
+    <main>
+
+        <div class="container">
+
+            <div class="painel-esquerdo">
+                <h2>Senha</h2>
+
+                <div class="senha">
+                    <div class="circulo segredo"></div>
+                    <div class="circulo segredo"></div>
+                    <div class="circulo segredo"></div>
+                    <div class="circulo segredo"></div>
+                </div>
+
+                <div id="mensagem"></div>
+            </div>
+
+            <div class="painel-centro">
+
+                <h2>Tentativa Atual</h2>
+
+                <div id="tentativa-atual" class="linha-atual">
+                    <div class="circulo"></div>
+                    <div class="circulo"></div>
+                    <div class="circulo"></div>
+                    <div class="circulo"></div>
+                </div>
+
+                <div class="cores">
+                    <button class="cor vermelho" data-cor="red"></button>
+                    <button class="cor azul" data-cor="blue"></button>
+                    <button class="cor verde" data-cor="green"></button>
+                    <button class="cor amarelo" data-cor="yellow"></button>
+                    <button class="cor roxo" data-cor="purple"></button>
+                    <button class="cor laranja" data-cor="orange"></button>
+                </div>
+
+                <div class="botoes">
+                    <button id="apagar">Apagar</button>
+                    <button id="confirmar">Confirmar</button>
+                </div>
+
+                <h2>Histórico</h2>
+
+                <div id="historico"></div>
+
+            </div>
+
+            <div class="painel-direito">
+                <h2>Regras</h2>
+
+                <p>🟢 Cor e posição corretas.</p>
+                <p>⚪ Cor correta em posição errada.</p>
+                <p>⚫ Cor não existe na senha.</p>
+
+                <br>
+
+                <p>Você possui 10 tentativas.</p>
+            </div>
+
+        </div>
+
+    </main>
+
+    <script src="/GameSenha/assests/scripts/home.js"></script>
+
+</body>
+
+</html>

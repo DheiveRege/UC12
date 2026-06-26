@@ -1,0 +1,141 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:cadetblue;
+    min-height:100vh;
+}
+
+header{
+    height:100px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:aquamarine;
+}
+
+main{
+    display:flex;
+    justify-content:center;
+    padding:30px;
+}
+
+.container{
+    width:1200px;
+    max-width:95%;
+    display:grid;
+    grid-template-columns:1fr 2fr 1fr;
+    gap:30px;
+}
+
+.painel-esquerdo,
+.painel-centro,
+.painel-direito{
+    background:white;
+    border-radius:20px;
+    padding:20px;
+}
+
+h2{
+    margin-bottom:15px;
+}
+
+.senha,
+.linha-atual{
+    display:flex;
+    gap:10px;
+    margin-bottom:20px;
+}
+
+.circulo{
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    border:2px solid black;
+}
+
+.segredo{
+    background:black;
+}
+
+.cores{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:10px;
+    margin-bottom:20px;
+}
+
+.cor{
+    height:60px;
+    border:none;
+    border-radius:15px;
+    cursor:pointer;
+}
+
+.vermelho{
+    background:red;
+}
+
+.azul{
+    background:blue;
+}
+
+.verde{
+    background:green;
+}
+
+.amarelo{
+    background:yellow;
+}
+
+.roxo{
+    background:purple;
+}
+
+.laranja{
+    background:orange;
+}
+
+.botoes{
+    display:flex;
+    gap:10px;
+    margin-bottom:20px;
+}
+
+.botoes button{
+    flex:1;
+    padding:10px;
+    cursor:pointer;
+}
+
+.tentativa{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:10px;
+    padding:10px;
+    border:1px solid #ddd;
+    border-radius:10px;
+}
+
+.coresTentativa{
+    display:flex;
+    gap:5px;
+}
+
+.mini{
+    width:25px;
+    height:25px;
+    border-radius:50%;
+    border:1px solid black;
+}
+
+#mensagem{
+    font-size:20px;
+    font-weight:bold;
+    margin-top:20px;
+}

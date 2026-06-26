@@ -1,0 +1,181 @@
+/* ==========================
+   RESET
+========================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333333;
+}
+
+/* ==========================
+   HEADER
+========================== */
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    height: 10vh;
+
+    padding: 20px;
+
+    background-color: #F8D7DA;
+
+    position: relative;
+    z-index: 10;
+
+    box-shadow: 0 4px 16px rgba(0, 0, 0, .2);
+}
+
+nav {
+    display: flex;
+    gap: 1vh;
+
+}
+
+nav a {
+    font-weight: 600;
+    text-decoration: none;
+
+    transition: .3s;
+}
+
+nav a:hover {
+    color: rgb(25, 18, 18);
+}
+
+.btn-header{
+    width: 100px;
+    padding: 8px;
+
+    font-weight: 600;
+
+    background-color: #F8D7DA;
+
+    border: none;
+    border-radius: 5px;
+
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.btn-header:hover{
+    background-color: #f7c9cc;
+}
+
+/* ==========================
+   MAIN
+========================== */
+
+main {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    height: 100vh;
+
+    background-color: #FFF8F6;
+}
+
+/* ==========================
+   Bem vindo card
+========================== */
+
+.card-hello {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    width: 40vh;
+    height: 40vh;
+
+}
+
+/* ==========================
+   LOGIN
+========================== */
+
+.container-login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 40vh;
+    height: 40vh;
+    gap: 15px;
+
+
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+.text-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:8px;
+}
+
+/* ==========================
+   FORMULÁRIO
+========================== */
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 10px;
+    gap: 10px;
+}
+
+input {
+    width: 25vh;
+
+    padding: 8px;
+
+    border: 2px solid rgb(181, 181, 181);
+    border-radius: 5px;
+}
+
+input:focus{
+    border-color:#D8A7B1;
+}
+
+.btn-login {
+    width: 25vh;
+    padding: 8px;
+
+    font-weight: 600;
+
+    background-color: #D8A7B1;
+
+    border: none;
+    border-radius: 5px;
+
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.btn-login:hover {
+    background-color: #C97B84;
+}
+
+/* ==========================
+   FOOTER
+========================== */
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 10vh;
+
+    background-color: #F8D7DA;
+}
