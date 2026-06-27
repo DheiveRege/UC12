@@ -50,6 +50,8 @@ img {
 
 /*Apicça o estilo abaixo para telas de 768 viu fodido*/
 @media (max-width: 768px) {
+
+            
     .menu-desktop {
         display: none;
     }

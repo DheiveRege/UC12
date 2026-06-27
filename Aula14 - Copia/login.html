@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Faça login para acessar nossos serviços exclusivos.">
+    <link rel="stylesheet" href="./assets/CSS/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Login | LOGO</title>
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="logo-container">
+            <h1>LOGO</h1>
+        </div>
+
+        <nav class="main-nav">
+            <a href="home.html">Início</a>
+            <a href="#">Serviços</a>
+            <a href="#">Sobre</a>
+        </nav>
+
+        <div class="header-actions">
+            <button class="btn-header" aria-label="Entrar ou Cadastrar">
+                Entrar ou Cadastrar
+            </button>
+            <button class="btn-menu-mobile" aria-label="Abrir menu" aria-expanded="false">
+                <i id="btn-menu" class="fa-solid fa-bars" aria-hidden="true"></i>
+            </button>
+        </div>
+    </header>
+
+    <main class="login-layout">
+        <section class="card-hello">
+            <h1>Bem-vindo de volta!</h1>
+            <p>Realce sua beleza com nossos serviços exclusivos.
+               Faça login e agende seu próximo atendimento.</p>
+        </section>
+
+        <section class="container-login">
+            <div class="text-login">
+                <i class="fa-solid fa-user" aria-hidden="true"></i>
+                <h2>Login</h2>
+            </div>
+
+            <form action="#" method="POST" class="login-form">
+                <div class="input-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="Exemplo@gmail.com" required autocomplete="email">
+                </div>
+
+                <div class="input-group">
+                    <label for="senha">Senha</label>
+                    <input type="password" id="senha" name="senha" placeholder="Senha" required autocomplete="current-password">
+                </div>
+
+                <button class="btn-login" id="btn-login" type="submit">Entrar</button>
+
+                <p class="register-prompt">Não tem conta? <a class="link-cadastro" href="#">Cadastrar</a></p>
+            </form>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; 2026 LOGO. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>

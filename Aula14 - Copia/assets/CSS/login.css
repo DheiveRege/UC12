@@ -1,0 +1,274 @@
+/* ==========================
+   VARIÁVEIS E RESET
+========================== */
+:root {
+    --bg-color: #ffefea;
+    --header-footer-bg: #F8D7DA;
+    --btn-bg: #D8A7B1;
+    --btn-hover: #C97B84;
+    --text-color: #333333;
+    --text-light: #ffffff;
+    --border-color: #b5b5b5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--text-color);
+}
+
+body {
+    /* Estrutura flexível para empurrar o footer para o final */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: var(--bg-color);
+}
+
+/* ==========================
+   HEADER
+========================== */
+.main-header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    padding: 20px;
+    background-color: var(--header-footer-bg);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    
+    position: relative;
+    z-index: 10;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-img {
+    height: 50px;
+    width: auto;
+    border-radius: 4px;
+}
+
+.main-nav {
+    display: flex;
+    gap: 20px;
+}
+
+.main-nav a {
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.main-nav a:hover {
+    color: var(--btn-hover);
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.btn-header {
+    padding: 10px 20px;
+    font-weight: 600;
+    background-color: transparent;
+    border: 2px solid var(--btn-hover);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-header:hover {
+    background-color: var(--btn-hover);
+    color: var(--text-light);
+}
+
+.btn-menu-mobile {
+    display: none; /* Escondido no desktop */
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* ==========================
+   MAIN (Layout Flexível)
+========================== */
+main {
+    flex: 1; /* Preenche todo o espaço vazio disponível */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%; /* Espaçamento entre o texto e o login */
+    padding: 40px 20px;
+}
+
+/* ==========================
+   BEM VINDO (CARD / HERO)
+========================== */
+.card-hello, .hero-section {
+    max-width: 400px; /* Limite de largura para leitura confortável */
+    text-align: left;
+}
+
+.card-hello h1, .hero-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: var(--btn-hover); /* Dá destaque ao título */
+}
+
+.card-hello p, .hero-section p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+/* ==========================
+   LOGIN
+========================== */
+.container-login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    
+    width: 100%;
+    max-width: 350px; /* Mais seguro que 20% para telas variadas */
+    padding: 30px;
+    
+    background-color: #ffffff; /* Fundo branco para destacar no rosa */
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+.text-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+/* ==========================
+   FORMULÁRIO
+========================== */
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.input-group label {
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    outline: none; /* Remove a borda padrão feia de foco */
+}
+
+input:focus {
+    border-color: var(--btn-bg);
+    box-shadow: 0 0 5px rgba(216, 167, 177, 0.5); /* Efeito de brilho */
+}
+
+.btn-login {
+    width: 100%;
+    padding: 12px;
+    
+    font-weight: bold;
+    font-size: 1rem;
+    background-color: var(--btn-bg);
+    color: var(--text-light); /* Cor do texto fixa em branco */
+    
+    border: none;
+    border-radius: 5px;
+    
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.btn-login:hover {
+    background-color: var(--btn-hover);
+    transform: scale(1.02); /* Cresce de forma fluida */
+}
+
+.register-prompt {
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: 10px;
+}
+
+.link-cadastro {
+    color: var(--btn-hover);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.link-cadastro:hover {
+    text-decoration: underline;
+}
+
+/* ==========================
+   FOOTER
+========================== */
+.main-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--header-footer-bg);
+    font-size: 0.9rem;
+}
+
+/* ==========================
+   MOBILE (Responsividade)
+========================== */
+@media (max-width: 768px) {
+    .main-header {
+        justify-content: space-between;
+    }
+
+    .main-nav, .btn-header {
+        display: none; /* Esconde elementos não essenciais */
+    }
+
+    .btn-menu-mobile {
+        display: block; /* Revela o menu hamburguer */
+        color: var(--text-color);
+    }
+
+    main {
+        flex-direction: column;
+        gap: 40px;
+        padding-top: 60px; /* Dá um respiro extra em cima no mobile */
+    }
+
+    .card-hello, .hero-section {
+        text-align: center; /* Centraliza o texto no mobile */
+        padding: 0 20px;
+    }
+
+    .container-login {
+        max-width: 90%; /* Expande o login para ocupar a tela inteira */
+    }
+}
