@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  height: 100vh;
+
+}
+
+/* ==========================
+   BTN
+========================== */
+.btn-primario {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+
+  width: 10%;
+  height: 10%;
+
+  border: none;
+  padding: 20px 10px;
+  border-radius: 10px;
+
+  background-color: royalblue;
+
+  transition: 0.5s;
+}
+
+.btn-segundario {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+
+  width: 10%;
+  height: 10%;
+
+  border: none;
+  padding: 20px 10px;
+  border-radius: 10px;
+
+  background-color: rgb(225, 65, 65);
+
+  transition: 0.5s;
+}
+
+.btn-desativado {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+
+  width: 10%;
+  height: 10%;
+
+  border: none;
+  padding: 20px 10px;
+  border-radius: 10px;
+
+  background-color: rgb(72, 68, 68);
+
+  transition: 0.5s;
+}
+
+.btn-primario:hover {
+  background-color: rgb(43, 96, 255);
+}
+
+.btn-segundario:hover {
+  background-color: rgb(246, 9, 9);
+}
+
+.btn-desativado:hover {
+  background-color: rgb(58, 55, 55);
+}
+
+/* ==========================
+   Execicio leo cabeça de tico
+========================== */
+
+.card {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  gap: 5px;
+
+  height: 50%;
+  width: 50%;
+
+  padding: 5px;
+
+  border-radius: 20px;
+
+  color: #555;
+  background-color: whitesmoke;
+
+  box-shadow: 0 4px 16px rgba(104, 101, 101, 0.5);
+}
+
+.card2 {
+  display: flex;
+  align-items: end;
+  justify-content: end;
+
+  height: 50%;
+  width: 75%;
+
+  padding: 10px;
+
+  background-color:whitesmoke;
+}
+
+/* ==========================
+   Execicio leo cabeça de tico btn
+========================== */
+.btn-ex {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+
+  width: 100px;
+  height: 35px;
+
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+
+  color: whitesmoke;
+  background-color: royalblue;
+
+  transition: all 0.8s;
+}
+
+.btn-ex:hover {
+  background-color: rgb(11, 69, 242);
+}
+/* ==========================
+   Execicio leo cabeça de tico imgs
+========================== */
+
+.img-lin{
+  width: 100%;
+  height: 60%;
+}
