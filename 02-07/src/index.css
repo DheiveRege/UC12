@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@theme {
+  --color-fundo-base: #EAE3D2;
+  --color-fundo-elevado: #DDD2B7;
+  --color-texto-principal: #201D18;
+  --color-texto-secundario: #6B6354;
+  --color-amarelo-selo: #F2C11A;
+  --color-vermelho-selo: #FF5A45;
+
+  --font-display: "Fraunces", serif;
+  --font-body: "Work Sans", sans-serif;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-fundo-base);
+  color: var(--color-texto-principal);
+}
